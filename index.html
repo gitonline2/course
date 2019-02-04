@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  
+<meta charset=utf-8 />
+  <title>Concept Project</title>
+  <!-- Here's our stylesheet -->
+  <style>
+    
+    /* This is our stylesheet. Remember, comments inside CSS (here, 
+       inside our <style> tag) use this syntax, not the HTML <!-- --> 
+       syntax.  Happy coding! */
+
+    
+    /* Overall styles and settings */
+    
+     body {
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      background-color: #ccc;
+      color: #000000;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 50px; /* breathing room at the bottom */
+      font-size: 16px;
+      line-height: 1.375;
+    }
+    
+    
+    /* Overall hyperlink styles */
+    /* (These styles are overridden in the navigation bar, which 
+        also uses <a> tags but which need to look different.) */
+    
+    a {
+      color: #19424b;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    
+    h1, h2, h3 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      line-height: 1;
+    }
+
+    
+    /* Page header */
+    
+    .header {
+      text-align: center;
+      background-color: #ccc;
+      color: #fff;
+      padding-top: 8px;
+      padding-bottom: 15px;
+      border-top: 7px solid #19424b;
+      border-bottom: 4px solid #19424b;
+      background-image: url("http://s18.postimg.org/9mrm9t3ft/header_background.jpg");
+      background-repeat: no-repeat;
+      background-position: left top; 
+    }
+    
+    h1 {
+      font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+      font-size: 60px;
+      margin-bottom: 2px;
+      text-shadow: -2px 2px 1px rgba(0, 0, 0, 1);
+    }
+    
+    h2 {
+      font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+      font-size: 22px;
+      line-height: 25px;
+      color: #000;
+      text-transform: uppercase;
+      <!--text-shadow: -2px 1px 1px rgba(0, 0, 0, 1);-->
+    }
+
+    
+    /* Navigation Bar */
+   
+    .nav {
+      padding-top: 20px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+       
+    /* Styles for the individual navigation buttons */
+    .nav-pills li a {
+      color: white;
+      text-decoration: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 15px;
+    }
+    
+    /* Styles for the navigation buttons when the mouse is over them */
+   .nav li a:hover, .nav li a:focus {
+      color: black;
+      background-color: white;
+    }
+
+    /* Style for the "active" navigation button (e.g., the page
+       you're currently on) */
+    .nav-pills .active a,
+    .nav-pills .active a:hover,
+    .nav-pills .active a:focus {
+      color: #000000;
+      background-color: #ffffff;
+    }    
+    
+    
+    
+    /* Styles for main promo area ("This Week's Special") */
+    
+    .special {
+      background-color: #c7ddcd;
+      margin-bottom: 30px;
+      
+      /* Box shadow generator: http://css3gen.com/box-shadow/ */
+      -webkit-box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow:    -1px 1px 10px rgba(0, 0, 0, 0.4);
+      box-shadow:         -1px 1px 10px rgba(0, 0, 0, 0.4); 
+    }
+    
+    .special p {
+      font-size: 15px;
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+ 
+    
+    /* Styles for body area (underneath main promo) */
+    
+    h3 {
+      font-family: "Open Sans Condensed", "Open Sans", sans-serif;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 42px;
+    }
+    
+    .philosophy-image {
+      float: right;
+      margin-right: 20px;
+      margin-left: 100px;
+    }
+    
+    /* END our styles */
+  </style>
+
+
+</head>
+<body>
+  
+ 
+  <!-- Header -->
+  <div class="header">
+     <div class="container">
+       <h1>Concept</h1>
+       <h2>Learning Module - Use Level</h2>
+    </div> <!-- END .container -->
+  </div> <!-- END .header -->
+  
+  <!-- Navigation -->
+  
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Introduction</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Practice</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Module</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+  <br><br>
+  <!-- END Navigation -->
+  <div>
+  <h2>Introduction to User Experience</h2>Unit 1.2: Signifiers
+Users can perceive visual interface elements as having strong, weak, or absent signifiers. It
+is important to provide the correct perceptible clues to allow users to determine what is
+  actionable or not.</p>
+  <h2>Entering Skills</h2>You should know how to navigate through a website to view content, interact with
+interface elements, and perform some basic tasks, such as scrolling, clicking or tapping,
+  typing, etc.</p>
+  <h2>Materials and Tools Needed</h2>
+You will need a device, such as a computer or tablet with a keyboard for typing, and an
+    internet connection.
+  </div>
+  <br>
+  <!-- This week's special -->
+  <div class="special">
+    
+  <img src="https://bmagdesign.files.wordpress.com/2019/02/practice-01.jpg">
+  <p><strong>Placeholder</strong> Ripe cherry tomatoes, snow peas, chick peas, and local seasonal spring veggies. <em>$9.50</em></p>
+  
+  </div> <!-- END .special -->
+    
+      <!-- Start two-column layout -->
+  
+  <div class="rows">
+    
+  <!-- First column -->
+  <div class="span8">
+  
+  <h3>Column 1</h3>
+  
+  <p>We built El Saladia out of a simple goal: to provide the freshest, healthiest ingredients at a reasonable price. We’re also committed to helping our communities, with our “Salad Daze” outreach program for meat-eaters. We love our salads, and hope you will too.</p>
+
+  <p><a href="">Learn more about us</a> or <a href="">Come work with us</a></p>
+      
+  <!-- END .span4 -->
+  
+  <!-- Second Column -->
+  <div class="span4">
+    
+  <h3>Location &amp; Hours</h3>
+  <p>711 Boylston Street<br>
+     Boston, MA 01226<br>
+    </p>
+  
+  <p></p>
+  
+  <p>Complaint or compliment?<br>
+    We'd love to hear it. <a href="">Get in touch!</a></p>
+  
+        </div> <!-- END .span4 -->
+      
+     </div> <!-- END .row -->
+  
+  </div>  <!-- END .container -->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
